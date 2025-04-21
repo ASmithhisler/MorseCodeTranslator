@@ -3,7 +3,7 @@ import pandas
 data = pandas.read_csv("morse_code.csv")
 morse_code_dict = {row.char: row.code for (index, row) in data.iterrows()}
 
-string = input("").upper()
+string = input("Type your message: ").upper()
 translation_list = []
 
 for word in string.split():
@@ -19,4 +19,4 @@ translation = ""
 for char in translation_list:
     translation += char + " "
 
-print(translation)
+print(f"The translation is: {translation}")
