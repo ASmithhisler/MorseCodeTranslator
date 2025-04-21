@@ -1,7 +1,10 @@
 import pandas
+from art import logo
 
 data = pandas.read_csv("morse_code.csv")
 morse_code_dict = {row.char: row.code for (index, row) in data.iterrows()}
+
+print(logo)
 
 retry = True
 while retry == True:
