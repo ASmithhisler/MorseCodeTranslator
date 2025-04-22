@@ -46,7 +46,10 @@ while retry == True:
 
     translation = ""
     for char in translation_list:
-        translation += char + " "
+        if func == "e":
+            translation += char + " "
+        if func == "d":
+            translation += char
 
     print(f"The translation is: {translation}")
 
